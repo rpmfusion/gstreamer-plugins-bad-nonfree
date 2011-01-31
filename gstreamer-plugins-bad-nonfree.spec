@@ -2,7 +2,7 @@
 
 Summary:        Non Free GStreamer streaming media framework "bad" plug-ins
 Name:           gstreamer-plugins-bad-nonfree
-Version:        0.10.18
+Version:        0.10.21
 Release:        1%{?dist}
 License:        LGPLv2+
 Group:          Applications/Multimedia
@@ -64,6 +64,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Fri Jan 28 2011 Hans de Goede <j.w.r.degoede@hhs.nl> 0.10.21-1
+- New upstream release 0.10.21
+
 * Sun Mar 14 2010 Hans de Goede <j.w.r.degoede@hhs.nl> 0.10.18-1
 - New upstream release 0.10.18
 
