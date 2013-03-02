@@ -3,14 +3,14 @@
 Summary:        Non Free GStreamer streaming media framework "bad" plug-ins
 Name:           gstreamer-plugins-bad-nonfree
 Version:        0.10.23
-Release:        1%{?dist}
+Release:        2%{?dist}
 License:        LGPLv2+
 Group:          Applications/Multimedia
 URL:            http://gstreamer.freedesktop.org/
 Source:         http://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-%{version}.tar.bz2
 BuildRequires:  gstreamer-devel gstreamer-plugins-base-devel
 BuildRequires:  faac-devel liboil-devel
-BuildRequires:  check gettext-devel PyXML
+BuildRequires:  check gettext-devel
 
 %description
 GStreamer is a streaming media framework, based on graphs of elements which
@@ -49,6 +49,9 @@ rm $RPM_BUILD_ROOT%{_libdir}/gstreamer-%{majorminor}/libgst*.la
 
 
 %changelog
+* Sat Mar  2 2013 Hans de Goede <j.w.r.degoede@gmail.com> - 0.10.23-2
+- Drop no longer needed PyXML BuildRequires (rf#2572)
+
 * Sat Nov 10 2012 Hans de Goede <j.w.r.degoede@gmail.com> - 0.10.23-1
 - New upstream release 0.10.23 (rf#2511)
 - Drop amrwbenc plugin, use voamrwbenc from -bad (freeworld) instead
