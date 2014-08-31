@@ -3,7 +3,7 @@
 Summary:        Non Free GStreamer streaming media framework "bad" plug-ins
 Name:           gstreamer-plugins-bad-nonfree
 Version:        0.10.23
-Release:        2%{?dist}
+Release:        3%{?dist}
 License:        LGPLv2+
 Group:          Applications/Multimedia
 URL:            http://gstreamer.freedesktop.org/
@@ -49,6 +49,9 @@ rm $RPM_BUILD_ROOT%{_libdir}/gstreamer-%{majorminor}/libgst*.la
 
 
 %changelog
+* Sun Aug 31 2014 Sérgio Basto <sergio@serjux.com> - 0.10.23-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_22_Mass_Rebuild
+
 * Sat Mar  2 2013 Hans de Goede <j.w.r.degoede@gmail.com> - 0.10.23-2
 - Drop no longer needed PyXML BuildRequires (rf#2572)
 
