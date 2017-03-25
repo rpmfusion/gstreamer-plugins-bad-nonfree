@@ -3,7 +3,7 @@
 Summary:        Non Free GStreamer streaming media framework "bad" plug-ins
 Name:           gstreamer-plugins-bad-nonfree
 Version:        0.10.23
-Release:        3%{?dist}
+Release:        4%{?dist}
 License:        LGPLv2+
 Group:          Applications/Multimedia
 URL:            http://gstreamer.freedesktop.org/
@@ -49,6 +49,9 @@ rm $RPM_BUILD_ROOT%{_libdir}/gstreamer-%{majorminor}/libgst*.la
 
 
 %changelog
+* Sat Mar 25 2017 RPM Fusion Release Engineering <kwizart@rpmfusion.org> - 0.10.23-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild
+
 * Sun Aug 31 2014 Sérgio Basto <sergio@serjux.com> - 0.10.23-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_21_22_Mass_Rebuild
 
