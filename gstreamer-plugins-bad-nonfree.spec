@@ -10,7 +10,7 @@ URL:            http://gstreamer.freedesktop.org/
 Source:         http://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-%{version}.tar.bz2
 BuildRequires:  gstreamer-devel gstreamer-plugins-base-devel
 BuildRequires:  faac-devel liboil-devel
-BuildRequires:  check gettext-devel
+BuildRequires:  check gettext-devel gcc
 
 %description
 GStreamer is a streaming media framework, based on graphs of elements which
